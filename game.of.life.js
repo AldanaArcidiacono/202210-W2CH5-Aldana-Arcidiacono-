@@ -1,7 +1,9 @@
 const board = [
-    [0, 1, 0],
-    [0, 1, 0],
-    [0, 1, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 1, 1, 1, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 0, 0, 0],
 ];
 
 const killTheCell = (array) => {
@@ -16,13 +18,7 @@ const killTheCell = (array) => {
                 }
             }
         }
-        // Que itere y compare verticalemente el elemento del array
-        // if (array[i] === 1) {
-        //     if (array[i - 1] === 0 && array[i + 1] === 0) {
-        //         array[i] = 0;
-        //     }
-        // }
     }
     return array;
 };
-console.log(killTheCell(board));
+console.table(killTheCell(board));
